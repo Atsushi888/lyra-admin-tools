@@ -1,2 +1,4 @@
 streamlit>=1.39.0
-streamlit-authenticator[bcrypt]>=0.3.2
+bcrypt>=4.1.2
+# Hasherを使う場合だけ必要。使えれば使う、ダメならbcryptへフォールバック。
+streamlit-authenticator[bcrypt]==0.3.2
